@@ -1,41 +1,83 @@
-.btn-primary {
-  background-color: #49cbcd;
-  border: #49cbcd; }
-
-/*LANDING*/
-.landing, .client {
-  border-radius: 0;
-  text-align: center;
+/*COLORS*/
+/*$center: */
+.landing1, .landing2, .landing3, .contact {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  height: 500px;
+  color: #ffffff; }
+
+body {
+  font-family: sans-serif;
+  color: #696d76;
+  font-size: .85em;
+  font-weight: 600; }
+
+/*NAV*/
+.navbar {
+  padding: 0em 3em; }
+  .navbar li {
+    padding: 2em 1em; }
+    .navbar li:hover {
+      background-color: #f8f9fb;
+      border-bottom: 2px solid #49cbcd; }
+
+.nav-link:hover {
+  color: #49cbcd !important; }
+
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+  color: #49cbcd !important;
+  font-size: 3em;
+  font-weight: 400;
+  font-style: italic; }
+
+/*LANDING*/
+.landing1 {
+  background-image: url("../images/underwater.PNG") !important; }
+
+.landing2 {
+  background-image: url("../images/duskywaters.jpg") !important; }
+
+.landing3 {
+  background-image: url("../images/darkwater.PNG") !important; }
+
+.center {
+  top: 30%;
+  text-align: center; }
+  .center h1 {
+    font-size: 4.5em; }
+  .center p {
+    padding: 1% 35%;
+    font-size: 1.7em;
+    font-weight: 400; }
 
 .btn-primary {
   background-color: #49cbcd;
   border: #49cbcd; }
-
-.landing {
-  height: 500px; }
 
 /*CARDS*/
 .card {
   border: none; }
-
-.icon-style {
-  font-size: 2em;
-  border-radius: 50%;
-  border: solid 0.08em #49cbcd;
-  color: #49cbcd;
-  line-height: 3em;
-  width: 3em;
-  height: 3em;
-  text-align: center;
-  display: inline-block;
-  transition: 0.5s; }
+  .card span {
+    font-size: 2em;
+    border-radius: 50%;
+    border: solid 0.08em #49cbcd;
+    color: #49cbcd;
+    line-height: 3em;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    display: inline-block;
+    transition: 0.5s; }
 
 /*PORTFOLIO*/
 .portfolio {
@@ -48,7 +90,7 @@ div.gallery {
   /*width: 180px;*/ }
 
 div.gallery:hover {
-  border: 1px solid #777777; }
+  border: 1px solid #ffffff; }
 
 div.gallery img {
   width: 100%;
@@ -56,12 +98,21 @@ div.gallery img {
 
 /*CLIENTS*/
 .client {
-  background-color: #777777; }
+  background-color: #ffffff; }
 
 .jumbo-text {
   /*padding: 15% 0%;*/ }
 
 /*CONTACT*/
+.contact {
+  background-image: url("../images/blacktexture.jpg"); }
+  .contact h1, .contact h4 {
+    color: #ffffff; }
+  .contact p {
+    color: #696d76; }
+  .contact .contact-info {
+    color: #a393c3; }
+
 /*MEDIA*/
 /*extra small - phone*/
 @media screen and (max-width: 575.98px) {

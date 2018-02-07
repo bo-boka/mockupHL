@@ -22,8 +22,7 @@
     <script src="https://code.angularjs.org/1.2.9/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.2.9/angular-route.min.js"></script>
     <!--GOOGLE FONTS-->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 </head>
 <body>
@@ -32,24 +31,30 @@
 
   <!-- NAVBAR -->	
   <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="#" style="color: #49cbcd;">The Humane League</a>
+  <nav class="navbar navbar-expand-lg navbar-light">
+	  <a class="navbar-brand" href="#">Sarah</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav ml-auto">
-	      <li class="nav-item active">
+	      <li class="nav-item">
 	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Features</a>
+	        <a class="nav-link" href="#">Service</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Pricing</a>
+	        <a class="nav-link" href="#">Portfolio</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link disabled" href="#">Disabled</a>
+	        <a class="nav-link" href="#">Team</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Blog</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Contact</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -60,10 +65,10 @@
   <div id="carousel-landing" class="carousel slide" data-ride="carousel" data-interval="false">
 	  <div class="carousel-inner">
 	  	<div class="carousel-item active">
-	      <div class="jumbotron landing" style="background-image: url(images/beach.PNG)">
-			  <div class="align-self-center">
-			  	  <h1>The Humane League</h1>
-				  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+	      <div class="jumbotron landing1">
+			  <div class="center">
+			  	  <h1>This is a main heading</h1>
+				  <p>Lorem Ipsum is simply dummy text of the printing</p>
 				  <p class="lead">
 				    <a class="btn btn-outline-light btn-lg" href="#" role="button" ><strong>Learn more</strong></a>
 				  </p>
@@ -71,24 +76,18 @@
 		  </div>
 	    </div>
 	    <div class="carousel-item">
-	      <div class="jumbotron landing" style="background-image: url(images/duskywaters.jpg);" >
-			  <div class="jumbo-text">
-			  	  <h1>The Humane League</h1>
-				  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-				  <p class="lead">
-				    <a class="btn btn-light btn-lg" href="#" role="button" style="background-color: transparent; color: white; border-width: medium;"><strong>Learn more</strong></a>
-				  </p>
+	      <div class="jumbotron landing2">
+			  <div class="center">
+			  	  <h1>This is a main heading</h1>
+				  <p>Lorem Ipsum is simply dummy text of the printing</p>
 			  </div>
 	      </div>
 	    </div>
 	    <div class="carousel-item">
-	      <div class="jumbotron landing" style="background-image: url(images/duskywaters.jpg)">
-			  <div class="jumbo-text">
-			  	  <h1>The Humane League</h1>
-				  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-				  <p class="lead">
-				    <a class="btn btn-light btn-lg" href="#" role="button" style="background-color: transparent; color: white; border-width: medium;"><strong>Learn more</strong></a>
-				  </p>
+	      <div class="jumbotron landing3" style="background-image: url(images/duskywaters.jpg)">
+			  <div class="center">
+			  	  <h1>This is a main heading</h1>
+				  <p>Lorem Ipsum is simply dummy text of the printing</p>
 			  </div>
 	      </div>
 	    </div>
@@ -109,7 +108,7 @@
 	    <div class="col-sm">
 	      <div class="card">
 	      	  <div>
-		      	<span class="icon-style">
+		      	<span>
 		      		<i class="fas fa-rocket"></i>
 		      	</span>
 		      </div>
@@ -124,7 +123,7 @@
 	    <div class="col-sm">
 	      <div class="card">
 			  <div>
-		      	<span class="icon-style">
+		      	<span>
 		      		<i class="fas fa-desktop"></i>
 		      	</span>
 		      </div>
@@ -138,7 +137,7 @@
 	    <div class="col-sm">
 	      <div class="card">
 		  <div>
-		      	<span class="icon-style">
+		      	<span>
 		      		<i class="far fa-lightbulb"></i>
 		      	</span>
 		      </div>
@@ -152,7 +151,7 @@
 	    <div class="col-sm">
 	      <div class="card">
 		  <div>
-		      	<span class="icon-style">
+		      	<span>
 		      		<i class="fas fa-mobile-alt"></i>
 		      	</span>
 		      </div>
@@ -199,7 +198,7 @@
   
   <!-- TESTIMONIALS todo remove interval false after-->
   <div id="carouselClient" class="carousel slide" data-ride="carousel" data-interval="false">
-	  <div class="carousel-inner">
+	  <div class="carousel-inner client">
 	  	<div class="carousel-item active">
 	      <div class="jumbotron client">
 			  <div class="jumbo-text">
@@ -239,27 +238,30 @@
   </div>
   
   <!-- CONTACT -->
-  <div class="container">
-  <h1>Contact Us</h1>
-  <div class="row">
-	   <div class="col-sm img-responsive img-port">
-	     <div>
-	     	<h4>Get in touch with us</h4>
-	     	<p>They removed all of the float classes and classes that used float to use use flexbox by default.</p>
-	     
-	     </div>
-	     <div>
-	     	<div>FLAVICONS</div>
-	     	<div>www.sarahboka.com</div>
-	     	<div>1-222-333-4444</div>
-	     	<div>info@infoauthor.com</div>
-	     </div>
-	   </div>
-	   <div class="col-sm">
-	     FORM
-	   </div>
-	 </div>
+  <div class="contact">
+  	<div class="container">
+	  <h1>Contact Us</h1>
+	  <div class="row">
+		   <div class="col-sm">
+		     <div>
+		     	<h4>Get in touch with us</h4>
+		     	<p>They removed all of the float classes and classes that used float to use use flexbox by default.</p>
+		     
+		     </div>
+		     <div class="contact-info">
+		     	<div>FLAVICONS</div>
+		     	<div>www.sarahboka.com</div>
+		     	<div>1-222-333-4444</div>
+		     	<div>info@infoauthor.com</div>
+		     </div>
+		   </div>
+		   <div class="col-sm">
+		     FORM
+		   </div>
+		 </div>
+	</div>	
   </div>
+  
   
 
 

@@ -1,18 +1,90 @@
 @import 'vars';
+@import 'mixins';
+
+%bgd-image {
+  @include img-bgd-size(cover);
+  @include border-radius(0px);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 500px;
+  color: $white;
+}
+
+
+
+body {
+	font-family: sans-serif;
+	color: $darkgray;
+	font-size: .85em;
+	font-weight: 600;
+}
+
+/*NAV*/
+
+.navbar {
+	padding: 0em 3em;
+
+	li { 
+		padding: 2em 1em;
+		&:hover {
+			background-color: $mutegray;
+			border-bottom: 2px solid $seafoam;
+			
+		} 
+	}
+}
+
+.nav-link {
+	&:hover{
+		color: $seafoam !important;	
+	}
+	
+}
+
+.navbar-brand {
+	font-family: 'Lobster', cursive;
+	color: $seafoam !important;	
+	font-size: 3em;
+	font-weight: 400;
+	font-style: italic;
+
+}
 
 
 /*LANDING*/
 
-.landing, .client{
-  border-radius: 0;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.landing1{
+  background-image: url("../images/underwater.PNG") !important;
+  @extend %bgd-image; 
+  
+}
+
+.landing2{
+  background-image: url("../images/duskywaters.jpg") !important;
+  @extend %bgd-image; 
+  
+}
+
+.landing3{
+  background-image: url("../images/darkwater.PNG") !important;
+  @extend %bgd-image; 
+  
+}
+
+.center{	
+    top: 30%;
+    text-align: center;
+
+    h1 {
+    	font-size: 4.5em;
+    }
+    p {
+    	padding: 1% 35%;
+    	font-size: 1.7em;
+    	font-weight: 400;
+
+    }
 }
 
 .btn-primary {
@@ -20,34 +92,28 @@
 	border: $seafoam;
 }
 
-
-.landing{
-	height: 500px;
-}
-
 /*CARDS*/
 
 .card {
 	border: none;
-}
-
-.icon-style {
-	font-size:2em;
-	border-radius: 50%;
-	border: solid .08em $seafoam;
-	color: #49cbcd;
-	line-height: 3em;
-	width: 3em;
-	height: 3em;
-	text-align: center;
-	display: inline-block;
-	transition:0.5s;
+	span {
+		font-size:2em;
+		border-radius: 50%;
+		border: solid .08em $seafoam;
+		color: $seafoam;
+		line-height: 3em;
+		width: 3em;
+		height: 3em;
+		text-align: center;
+		display: inline-block;
+		transition:0.5s;
+	}
 }
 
 /*PORTFOLIO*/
 
 .portfolio {
-	background-color: $mutegray;
+	background-color: $gray;
 }
 
 div.gallery {
@@ -66,7 +132,6 @@ div.gallery img {
     height: auto;
 }
 
-
 /*CLIENTS*/
 
 .client {
@@ -80,6 +145,19 @@ div.gallery img {
 
 /*CONTACT*/
 
+.contact {
+	background-image: url("../images/blacktexture.jpg");
+	@extend %bgd-image;
+	h1, h4 {
+		color: $white;
+	}
+	p {
+		color: $darkgray;
+	}
+	.contact-info {
+		color: $lavendar;
+	}
+}
 
 
 /*MEDIA*/
