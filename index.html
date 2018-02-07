@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html ng-app="myApp" lang="en">
+<head>
+  <title></title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--FONT AWESOME-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!-- <script src="https://use.fontawesome.com/2aa4f1c52f.js"></script> -->
+    <!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   
+    <!--INTERNAL LINKS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/hover.css">
+    
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+    <!--ANGULARJS-->
+    <script src="https://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.9/angular-route.min.js"></script>
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+</head>
+<body>
+
+
+
+  <!-- NAVBAR -->	
+  <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#" style="color: #49cbcd;">The Humane League</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Features</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Pricing</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#">Disabled</a>
+	      </li>
+	    </ul>
+	  </div>
+  </nav>
+  </div>
+  
+  <!-- IMAGE CAROUSEL todo: remove false interval when done-->
+  <div id="carousel-landing" class="carousel slide" data-ride="carousel" data-interval="false">
+	  <div class="carousel-inner">
+	  	<div class="carousel-item active">
+	      <div class="jumbotron landing" style="background-image: url(images/beach.PNG)">
+			  <div class="align-self-center">
+			  	  <h1>The Humane League</h1>
+				  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+				  <p class="lead">
+				    <a class="btn btn-outline-light btn-lg" href="#" role="button" ><strong>Learn more</strong></a>
+				  </p>
+			  </div>
+		  </div>
+	    </div>
+	    <div class="carousel-item">
+	      <div class="jumbotron landing" style="background-image: url(images/duskywaters.jpg);" >
+			  <div class="jumbo-text">
+			  	  <h1>The Humane League</h1>
+				  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+				  <p class="lead">
+				    <a class="btn btn-light btn-lg" href="#" role="button" style="background-color: transparent; color: white; border-width: medium;"><strong>Learn more</strong></a>
+				  </p>
+			  </div>
+	      </div>
+	    </div>
+	    <div class="carousel-item">
+	      <div class="jumbotron landing" style="background-image: url(images/duskywaters.jpg)">
+			  <div class="jumbo-text">
+			  	  <h1>The Humane League</h1>
+				  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+				  <p class="lead">
+				    <a class="btn btn-light btn-lg" href="#" role="button" style="background-color: transparent; color: white; border-width: medium;"><strong>Learn more</strong></a>
+				  </p>
+			  </div>
+	      </div>
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#carousel-landing" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carousel-landing" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+  </div>
+  
+  <!-- CARDS -->
+  <div class="container" style="text-align: center">
+	  <div class="row">
+	    <div class="col-sm">
+	      <div class="card">
+	      	  <div>
+		      	<span class="icon-style">
+		      		<i class="fas fa-rocket"></i>
+		      	</span>
+		      </div>
+			  <div class="card-body">
+			    <h5 class="card-title">Custom Designs</h5>
+			    <p class="card-text">Build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+			  </div>
+			
+		  </div>
+	    </div>
+	    <div class="col-sm">
+	      <div class="card">
+			  <div>
+		      	<span class="icon-style">
+		      		<i class="fas fa-desktop"></i>
+		      	</span>
+		      </div>
+			  <div class="card-body">
+			    <h5 class="card-title">Web Design</h5>
+			    <p class="card-text">Build on the card title and make up the bulk of the card's content.</p>
+			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+		  </div>
+	    </div>
+	    <div class="col-sm">
+	      <div class="card">
+		  <div>
+		      	<span class="icon-style">
+		      		<i class="far fa-lightbulb"></i>
+		      	</span>
+		      </div>
+		  <div class="card-body">
+		    <h5 class="card-title">Blog Pages</h5>
+		    <p class="card-text">Build on the card title and make up the bulk of the card's content.</p>
+		    <a href="#" class="btn btn-primary">Go somewhere</a>
+		  </div>
+		</div>
+	    </div>
+	    <div class="col-sm">
+	      <div class="card">
+		  <div>
+		      	<span class="icon-style">
+		      		<i class="fas fa-mobile-alt"></i>
+		      	</span>
+		      </div>
+		  <div class="card-body">
+		    <h5 class="card-title">Mobile fiendly</h5>
+		    <p class="card-text">Build on the card title and make up the bulk of the card's content.</p>
+		    <a href="#" class="btn btn-primary">Go somewhere</a>
+		  </div>
+		</div>
+	    </div>
+	  </div>
+  </div>
+  
+  <!-- PORTFOLIO -->
+  <div class="portfolio">
+  	<div class="container">
+  	 <h1 style="text-align: center">Portfolio</h1>
+  	 
+	 <div class="row">
+	   <div class="gallery">
+	     <img src="images/beach.PNG" alt="beach" style="width: 300px; height: 300px;">
+	   </div>
+	   <div class="gallery">
+	     <img src="images/beach.PNG" alt="beach" style="width: 300px; height: 300px;">
+	   </div>
+	   <div class="gallery">
+	     <img src="images/beach.PNG" alt="beach" style="width: 300px; height: 300px;">
+	   </div>
+	 </div>
+	 
+	 <div class="row">
+	   <div class="gallery">
+	     <img src="images/beach.PNG" alt="beach" style="width: 300px; height: 300px;">
+	   </div>
+	   <div class="gallery">
+	     <img src="images/beach.PNG" alt="beach" style="width: 300px; height: 300px;">
+	   </div>
+	   <div class="gallery">
+	     <img src="images/beach.PNG" alt="beach" style="width: 300px; height: 300px;">
+	   </div>
+	 </div>
+	</div>
+  </div>
+  
+  <!-- TESTIMONIALS todo remove interval false after-->
+  <div id="carouselClient" class="carousel slide" data-ride="carousel" data-interval="false">
+	  <div class="carousel-inner">
+	  	<div class="carousel-item active">
+	      <div class="jumbotron client">
+			  <div class="jumbo-text">
+			  	  <h1>What Clients Say</h1>
+				  <p class="lead">Gator Mark Anthony stalefish lien air front foot impossible. Trucks 720 hang up impossible. Nose grab Ray Barbee full pipe drop in manual. John Lucero skate key aerial skater nose-bump. NoMeansNo indy grab face plant noseblunt slide nollie. Tic-tac Randy Colvin hurricane 360 nosegrind. Bluntslide air rock and roll crailtap. Half-cab powerslide bearings lipslide. Neil Blender concave pogo feeble judo air.</p>
+				  <p>John Doe</p>
+			  </div>
+		  </div>
+	    </div>
+	    <div class="carousel-item">
+	      <div class="jumbotron client">
+			<div class="jumbo-text">
+				  <h1>What Clients Say</h1>
+				  <p class="lead">Slide Japan air opposite footed crail slide 50-50. Goofy footed Christ air lien air pool Chet Thomas nosebone. Bonite mute-air half-flip casper slide alley oop gnarly. Ledge invert kickturn cab flip birdie. Airwalk crooked grind nose grab frigid air skate key. Steps bluntslide kickturn hand rail coping.</p>
+				  <p>John Doe</p>
+			</div>
+	      </div>
+	    </div>
+	    <div class="carousel-item">
+	      <div class="jumbotron client">
+			  <div class="jumbo-text">
+			  	  <h1>What Clients Say</h1>
+				  <p class="lead">Hip snake bearings nose-bump. NoMeansNo indy grab face plant noseblunt slide nollie. Tic-tac Randy Colvin hurricane 360 nosegrind. Bluntslide air rock and roll crailtap. Half-cab powerslide bearings lipslide. Neil Blender concave pogo feeble judo air.</p>
+				  <p>John Doe</p>
+			  </div>
+	      </div>
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#carouselClient" role="button" data-slide="prev">
+	    <span class="fas fa-angle-left fa-2x" aria-hidden="true" style="color:silver;"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carouselClient" role="button" data-slide="next">
+	    <span class="fas fa-angle-right fa-2x" aria-hidden="true" style="color:silver;"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+  </div>
+  
+  <!-- CONTACT -->
+  <div class="container">
+  <h1>Contact Us</h1>
+  <div class="row">
+	   <div class="col-sm img-responsive img-port">
+	     <div>
+	     	<h4>Get in touch with us</h4>
+	     	<p>They removed all of the float classes and classes that used float to use use flexbox by default.</p>
+	     
+	     </div>
+	     <div>
+	     	<div>FLAVICONS</div>
+	     	<div>www.sarahboka.com</div>
+	     	<div>1-222-333-4444</div>
+	     	<div>info@infoauthor.com</div>
+	     </div>
+	   </div>
+	   <div class="col-sm">
+	     FORM
+	   </div>
+	 </div>
+  </div>
+  
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
