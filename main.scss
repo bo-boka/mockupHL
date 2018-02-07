@@ -1,0 +1,119 @@
+$bg: red;
+
+body {
+	background-color: $bg;
+}
+
+
+/*LANDING*/
+
+.landing, .client{
+  
+  border-radius: 0;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.btn-primary {
+	background-color: #49cbcd;
+	border: #49cbcd
+}
+
+
+.landing{
+	height: 500px;
+}
+
+/*CARDS*/
+
+.card {
+	border: none;
+}
+
+.icon-style {
+	font-size:2em;
+	border-radius: 50%;
+	border: solid .08em #49cbcd;
+	color: #49cbcd;
+	line-height: 3em;
+	width: 3em;
+	height: 3em;
+	text-align: center;
+	display: inline-block;
+	transition:0.5s;
+}
+
+/*PORTFOLIO*/
+
+.portfolio {
+	background-color: #f1f1f1;
+}
+
+div.gallery {
+    margin: px;
+    border: 1px solid #ccc;
+    float: left;
+    /*width: 180px;*/
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*CLIENTS*/
+
+.client {
+	background-color: white;
+}
+
+.jumbo-text{
+	/*padding: 15% 0%;*/
+	
+}
+
+/*CONTACT*/
+
+
+
+/*MEDIA*/
+
+/*extra small - phone*/
+@media screen and (max-width: 575.98px) { 
+	 body{
+	    background-color: green;
+	  }
+}
+
+/*small - landscape phone*/
+@media screen and (max-width: 767.98px) {
+	 body{
+	    background-color: blue;
+	  }
+}
+
+/*medium -  tablets*/
+@media screen and (max-width: 991.98px) {
+	 body{
+	    background-color: red;
+	  }
+}
+
+/*large - desktops*/
+@media screen and (max-width: 1199.98px) {
+	 body{
+	    background-color: yellow;
+	  }
+}
+
