@@ -60,13 +60,13 @@ body {
 
 /*LANDING*/
 
-.landing1{
-  background-image: url("../images/underwater.PNG") !important;
+.landing1
+  background-image: url("../images/duskywaters.jpg") !important;
   @extend %bgd-image; 
 }
 
 .landing2{
-  background-image: url("../images/duskywaters.jpg") !important;
+  background-image: url("../images/underwater.PNG") !important;
   @extend %bgd-image;  
 }
 

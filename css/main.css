@@ -1,160 +1,42 @@
-/*COLORS*/
-/*$center: */
-.landing1, .landing2, .landing3, .contact {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -ms-border-radius: 0px;
-  -o-border-radius: 0px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  height: 500px;
-  color: #ffffff;
-  padding-top: 100px; }
+/*
+Error: Invalid CSS after "...kywaters.jpg") ": expected "{", was "!important;"
+        on line 64 of C:\Users\bokas\Documents\_repos\mockupHL\sass\main.scss
 
-body {
-  font-family: sans-serif;
-  color: #696d76;
-  font-size: .85em;
-  font-weight: 600; }
+59: 
+60: 
+61: /*LANDING*\/
+62: 
+63: .landing1
+64:   background-image: url("../images/duskywaters.jpg") !important;
+65:   @extend %bgd-image; 
+66: }
+67: 
+68: .landing2{
+69:   background-image: url("../images/underwater.PNG") !important;
 
-.btn-primary {
-  background-color: #49cbcd;
-  border: #49cbcd; }
-
-.portfolio, .client, .center, .card.span {
-  text-align: center; }
-
-/*NAV*/
-.navbar {
-  padding: 0em 3em; }
-  .navbar li {
-    padding: 2em 1em; }
-    .navbar li:hover {
-      background-color: #f8f9fb;
-      border-bottom: 2px solid #49cbcd; }
-
-.nav-link:hover {
-  color: #49cbcd !important; }
-
-.navbar-brand {
-  font-family: 'Lobster', cursive;
-  color: #49cbcd !important;
-  font-size: 3em;
-  font-weight: 400;
-  font-style: italic; }
-
-/*LANDING*/
-.landing1 {
-  background-image: url("../images/underwater.PNG") !important; }
-
-.landing2 {
-  background-image: url("../images/duskywaters.jpg") !important; }
-
-.landing3 {
-  background-image: url("../images/showcase/668.JPG") !important; }
-
-.center h1 {
-  font-size: 4.5em; }
-.center p {
-  padding: 1% 35%;
-  font-size: 1.7em;
-  font-weight: 400; }
-
-/*CARDS*/
-.cards {
-  padding: 7% 0%; }
-
-.card {
-  border: none; }
-  .card span {
-    font-size: 2em;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border: solid 0.08em #49cbcd;
-    color: #49cbcd;
-    line-height: 3em;
-    width: 3em;
-    height: 3em;
-    display: inline-block;
-    transition: 0.5s; }
-
-.card-text {
-  font-size: 1em;
-  font-weight: 400; }
-
-/*PORTFOLIO*/
-.portfolio {
-  background-color: #f1f1f1;
-  padding: 7% 0%; }
-
-div.gallery {
-  padding: 3% 0%; }
-  div.gallery .row {
-    width: 82%;
-    margin: 0 auto; }
-  div.gallery img {
-    margin: 1em;
-    width: 20em;
-    height: 20em;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    border: none; }
-    div.gallery img:hover {
-      border: 1px solid #ffffff; }
-
-/*CLIENTS*/
-.client {
-  background-color: #ffffff;
-  padding: 7% 15%; }
-
-p.lead {
-  padding: 1% 15%;
-  font-size: 1.2em;
-  font-weight: 400; }
-
-/*CONTACT*/
-.contact {
-  height: 45em;
-  background-image: url("../images/blacktexture.jpg"); }
-  .contact .contact-div {
-    padding: 0% 10%; }
-  .contact h1, .contact h4 {
-    color: #ffffff; }
-  .contact h1 {
-    text-align: center;
-    padding-bottom: 2em; }
-  .contact p {
-    color: #696d76; }
-  .contact .contact-info {
-    color: #a393c3; }
-  .contact form {
-    padding: 0% 7%; }
-
-/*MEDIA*/
-/*extra small - phone*/
-@media screen and (max-width: 575.98px) {
-  body {
-    background-color: green; } }
-/*small - landscape phone*/
-@media screen and (max-width: 767.98px) {
-  body {
-    background-color: blue; } }
-/*medium -  tablets*/
-@media screen and (max-width: 991.98px) {
-  body {
-    background-color: red; } }
-/*large - desktops*/
-@media screen and (max-width: 1199.98px) {
-  body {
-    background-color: yellow; } }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+C:\Users\bokas\Documents\_repos\mockupHL\sass\main.scss:64
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...kywaters.jpg\") \": expected \"{\", was \"!important;\"\A         on line 64 of C:\Users\bokas\Documents\_repos\mockupHL\sass\main.scss\A \A 59: \A 60: \A 61: /*LANDING*/\A 62: \A 63: .landing1\A 64:   background-image: url(\"../images/duskywaters.jpg\") !important;\A 65:   @extend %bgd-image; \A 66: }\A 67: \A 68: .landing2{\A 69:   background-image: url(\"../images/underwater.PNG\") !important;"; }
