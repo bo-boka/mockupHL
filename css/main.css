@@ -21,6 +21,10 @@ body {
   font-size: .85em;
   font-weight: 600; }
 
+.btn-primary {
+  background-color: #49cbcd;
+  border: #49cbcd; }
+
 /*NAV*/
 .navbar {
   padding: 0em 3em; }
@@ -51,7 +55,6 @@ body {
   background-image: url("../images/darkwater.PNG") !important; }
 
 .center {
-  top: 30%;
   text-align: center; }
   .center h1 {
     font-size: 4.5em; }
@@ -59,10 +62,6 @@ body {
     padding: 1% 35%;
     font-size: 1.7em;
     font-weight: 400; }
-
-.btn-primary {
-  background-color: #49cbcd;
-  border: #49cbcd; }
 
 /*CARDS*/
 .card {
@@ -81,33 +80,36 @@ body {
 
 /*PORTFOLIO*/
 .portfolio {
-  background-color: #f1f1f1; }
+  background-color: #f1f1f1;
+  text-align: center; }
 
-div.gallery {
-  margin: 10px;
-  border: 1px solid #ccc;
-  float: left;
-  /*width: 180px;*/ }
-
-div.gallery:hover {
-  border: 1px solid #ffffff; }
-
+div.gallery .row {
+  width: 82%;
+  margin: 0 auto; }
 div.gallery img {
-  width: 100%;
-  height: auto; }
+  margin: 1em;
+  width: 20em;
+  height: 20em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border: none; }
+  div.gallery img:hover {
+    border: 1px solid #ffffff; }
 
 /*CLIENTS*/
 .client {
-  background-color: #ffffff; }
-
-.jumbo-text {
-  /*padding: 15% 0%;*/ }
+  background-color: #ffffff;
+  padding: 0% 15%; }
 
 /*CONTACT*/
 .contact {
   background-image: url("../images/blacktexture.jpg"); }
   .contact h1, .contact h4 {
     color: #ffffff; }
+  .contact h1 {
+    text-align: center; }
   .contact p {
     color: #696d76; }
   .contact .contact-info {

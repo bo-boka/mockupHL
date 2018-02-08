@@ -20,6 +20,12 @@ body {
 	font-weight: 600;
 }
 
+.btn-primary {
+	background-color: $seafoam;
+	border: $seafoam;
+}
+
+
 /*NAV*/
 
 .navbar {
@@ -29,8 +35,7 @@ body {
 		padding: 2em 1em;
 		&:hover {
 			background-color: $mutegray;
-			border-bottom: 2px solid $seafoam;
-			
+			border-bottom: 2px solid $seafoam;			
 		} 
 	}
 }
@@ -38,8 +43,7 @@ body {
 .nav-link {
 	&:hover{
 		color: $seafoam !important;	
-	}
-	
+	}	
 }
 
 .navbar-brand {
@@ -48,7 +52,6 @@ body {
 	font-size: 3em;
 	font-weight: 400;
 	font-style: italic;
-
 }
 
 
@@ -57,23 +60,20 @@ body {
 .landing1{
   background-image: url("../images/underwater.PNG") !important;
   @extend %bgd-image; 
-  
 }
 
 .landing2{
   background-image: url("../images/duskywaters.jpg") !important;
-  @extend %bgd-image; 
-  
+  @extend %bgd-image;  
 }
 
 .landing3{
   background-image: url("../images/darkwater.PNG") !important;
-  @extend %bgd-image; 
-  
+  @extend %bgd-image;  
 }
 
 .center{	
-    top: 30%;
+    
     text-align: center;
 
     h1 {
@@ -83,14 +83,9 @@ body {
     	padding: 1% 35%;
     	font-size: 1.7em;
     	font-weight: 400;
-
     }
 }
 
-.btn-primary {
-	background-color: $seafoam;
-	border: $seafoam;
-}
 
 /*CARDS*/
 
@@ -114,34 +109,38 @@ body {
 
 .portfolio {
 	background-color: $gray;
+	text-align: center;
+
+
 }
 
-div.gallery {
-    margin: 10px;
-    border: 1px solid #ccc;
-    float: left;
-    /*width: 180px;*/
+div.gallery {   
+	.row {
+		width: 82%;
+		margin: 0 auto;
+	}
+
+    img {
+    	margin: 1em;
+    	width: 20em; 
+    	height: 20em;
+    	@include border-radius(3px);
+    	border: none;
+
+    	&:hover {
+	    	border: 1px solid $white;
+	    }
+    }
 }
 
-div.gallery:hover {
-    border: 1px solid $white;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
 
 /*CLIENTS*/
 
 .client {
 	background-color: $white;
+	padding: 0% 15%;
 }
 
-.jumbo-text{
-	/*padding: 15% 0%;*/
-	
-}
 
 /*CONTACT*/
 
@@ -150,6 +149,10 @@ div.gallery img {
 	@extend %bgd-image;
 	h1, h4 {
 		color: $white;
+	}
+
+	h1 {
+		text-align: center;
 	}
 	p {
 		color: $darkgray;
