@@ -13,7 +13,8 @@
   background-attachment: fixed;
   background-position: center;
   height: 500px;
-  color: #ffffff; }
+  color: #ffffff;
+  padding-top: 100px; }
 
 body {
   font-family: sans-serif;
@@ -24,6 +25,9 @@ body {
 .btn-primary {
   background-color: #49cbcd;
   border: #49cbcd; }
+
+.portfolio, .client, .center, .card.span {
+  text-align: center; }
 
 /*NAV*/
 .navbar {
@@ -52,68 +56,88 @@ body {
   background-image: url("../images/duskywaters.jpg") !important; }
 
 .landing3 {
-  background-image: url("../images/darkwater.PNG") !important; }
+  background-image: url("../images/showcase/668.JPG") !important; }
 
-.center {
-  text-align: center; }
-  .center h1 {
-    font-size: 4.5em; }
-  .center p {
-    padding: 1% 35%;
-    font-size: 1.7em;
-    font-weight: 400; }
+.center h1 {
+  font-size: 4.5em; }
+.center p {
+  padding: 1% 35%;
+  font-size: 1.7em;
+  font-weight: 400; }
 
 /*CARDS*/
+.cards {
+  padding: 7% 0%; }
+
 .card {
   border: none; }
   .card span {
     font-size: 2em;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
     border: solid 0.08em #49cbcd;
     color: #49cbcd;
     line-height: 3em;
     width: 3em;
     height: 3em;
-    text-align: center;
     display: inline-block;
     transition: 0.5s; }
+
+.card-text {
+  font-size: 1em;
+  font-weight: 400; }
 
 /*PORTFOLIO*/
 .portfolio {
   background-color: #f1f1f1;
-  text-align: center; }
+  padding: 7% 0%; }
 
-div.gallery .row {
-  width: 82%;
-  margin: 0 auto; }
-div.gallery img {
-  margin: 1em;
-  width: 20em;
-  height: 20em;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border: none; }
-  div.gallery img:hover {
-    border: 1px solid #ffffff; }
+div.gallery {
+  padding: 3% 0%; }
+  div.gallery .row {
+    width: 82%;
+    margin: 0 auto; }
+  div.gallery img {
+    margin: 1em;
+    width: 20em;
+    height: 20em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border: none; }
+    div.gallery img:hover {
+      border: 1px solid #ffffff; }
 
 /*CLIENTS*/
 .client {
   background-color: #ffffff;
-  padding: 0% 15%; }
+  padding: 7% 15%; }
+
+p.lead {
+  padding: 1% 15%;
+  font-size: 1.2em;
+  font-weight: 400; }
 
 /*CONTACT*/
 .contact {
+  height: 45em;
   background-image: url("../images/blacktexture.jpg"); }
+  .contact .contact-div {
+    padding: 0% 10%; }
   .contact h1, .contact h4 {
     color: #ffffff; }
   .contact h1 {
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 2em; }
   .contact p {
     color: #696d76; }
   .contact .contact-info {
     color: #a393c3; }
+  .contact form {
+    padding: 0% 7%; }
 
 /*MEDIA*/
 /*extra small - phone*/

@@ -9,9 +9,8 @@
   background-position: center;
   height: 500px;
   color: $white;
+  padding-top: 100px;
 }
-
-
 
 body {
 	font-family: sans-serif;
@@ -23,6 +22,10 @@ body {
 .btn-primary {
 	background-color: $seafoam;
 	border: $seafoam;
+}
+
+.portfolio, .client, .center, .card.span {
+	text-align: center;
 }
 
 
@@ -68,14 +71,11 @@ body {
 }
 
 .landing3{
-  background-image: url("../images/darkwater.PNG") !important;
+  background-image: url("../images/showcase/668.JPG") !important;
   @extend %bgd-image;  
 }
 
-.center{	
-    
-    text-align: center;
-
+.center{	       
     h1 {
     	font-size: 4.5em;
     }
@@ -89,32 +89,39 @@ body {
 
 /*CARDS*/
 
+.cards {
+	padding: 7% 0%;
+}
+
 .card {
 	border: none;
 	span {
 		font-size:2em;
-		border-radius: 50%;
+		@include border-radius(50%);
 		border: solid .08em $seafoam;
 		color: $seafoam;
 		line-height: 3em;
 		width: 3em;
-		height: 3em;
-		text-align: center;
+		height: 3em;		
 		display: inline-block;
 		transition:0.5s;
 	}
+}
+
+.card-text{
+	font-size: 1em;
+	font-weight: 400;
 }
 
 /*PORTFOLIO*/
 
 .portfolio {
 	background-color: $gray;
-	text-align: center;
-
-
+	padding: 7% 0%;	
 }
 
-div.gallery {   
+div.gallery {  
+	padding: 3% 0%; 
 	.row {
 		width: 82%;
 		margin: 0 auto;
@@ -138,27 +145,43 @@ div.gallery {
 
 .client {
 	background-color: $white;
-	padding: 0% 15%;
+	padding: 7% 15%;
+
+	
+}
+
+p.lead{			
+	padding: 1% 15%;
+	font-size: 1.2em;
+	font-weight: 400;
 }
 
 
 /*CONTACT*/
 
 .contact {
+	height: 45em;
 	background-image: url("../images/blacktexture.jpg");
 	@extend %bgd-image;
+	.contact-div{
+		padding: 0% 10%
+	}
 	h1, h4 {
 		color: $white;
 	}
 
 	h1 {
 		text-align: center;
+		padding-bottom: 2em;
 	}
 	p {
 		color: $darkgray;
 	}
 	.contact-info {
 		color: $lavendar;
+	}
+	form {
+		padding: 0% 7%
 	}
 }
 
