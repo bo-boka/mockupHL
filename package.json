@@ -22,7 +22,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app",
-    "postinstall": "gulp default"
+    "postinstall": "chmod -R +x node_modules/gulp/bin/gulp-* && gulp build"
   },
   "repository": {
     "type": "git",
@@ -34,4 +34,4 @@
     "url": "https://github.com/sarahboka/mockupHL/issues"
   },
   "homepage": "https://github.com/sarahboka/mockupHL#readme"
-}
+}f
