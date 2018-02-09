@@ -2,6 +2,9 @@
   "name": "mockuphl",
   "version": "1.0.0",
   "description": "Single Page App using Sass, Bootstrap4, and AngularJS",
+  "engines": {
+    "node": "9.5.0"
+  }
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1"
