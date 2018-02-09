@@ -93,7 +93,7 @@ gulp.task('scripts', function(){
 //default runs function with naked 'gulp' command in bash
 //will run all functions
 gulp.task('default', ['message', 'copyIndex', 'copyHtml', 
-	'imageMin', 'sass', 'scripts', 'connect']);
+	'imageMin', 'sass', 'scripts']);
 
 
 //watch files for changes and automatically runs tasks
