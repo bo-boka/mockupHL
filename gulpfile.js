@@ -4,7 +4,9 @@ const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const clean = require('gulp-clean');
-var webserver = require('gulp-webserver');
+const webserver = require('gulp-webserver');
+const connect = require('gulp-connect');
+
 
 /*  
 
@@ -25,6 +27,11 @@ gulp.task('webserver', function() {
       directoryListing: true,
       open: true
     }));
+});
+
+//updated webserver 
+gulp.task('connect', function() {
+  connect.server();
 });
 
 //logs message
@@ -59,12 +66,21 @@ gulp.task('minify', function(){
 	.pipe(gulp.dest('dist/js'));
 });
 
-//compile sassgul
+//compile sass
 gulp.task('sass', function(){
 	gulp.src('sass/*.scss')
 	.pipe(sass().on('error', sass.logError))
 	.pipe(gulp.dest('dist/css'));
 });
+
+/*
+gulp.task('concatCSS', function(){
+	gulp.src('css/*.css')
+	.pipe(concat('style.css'))
+	.pipe(uglify()) //minifies after concat
+	.pipe(gulp.dest('dist/css'));
+});
+*/
 
 //concatenate js files and minifies
 gulp.task('scripts', function(){
@@ -77,7 +93,7 @@ gulp.task('scripts', function(){
 //default runs function with naked 'gulp' command in bash
 //will run all functions
 gulp.task('default', ['message', 'copyIndex', 'copyHtml', 
-	'imageMin', 'sass', 'scripts', 'watch', 'clean']);
+	'imageMin', 'sass', 'scripts', 'connect']);
 
 
 //watch files for changes and automatically runs tasks
@@ -90,12 +106,14 @@ gulp.task('watch', function(){
 
 });
 
+/*
 //clean 
 gulp.task('clean', function () {
     return gulp.src('app/tmp/index.js')
         .pipe(clean({force: true}))
         .pipe(gulp.dest('dist'));
 });
+*/
 
 /*
 //angular
