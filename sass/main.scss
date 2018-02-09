@@ -71,7 +71,7 @@ body {
 }
 
 .landing3{
-  background-image: url("../images/showcase/668.JPG") !important;
+  background-image: url("../images/kuangsi.PNG") !important;
   @extend %bgd-image;  
 }
 
@@ -160,7 +160,7 @@ p.lead{
 /*CONTACT*/
 
 .contact {
-	height: 45em;
+	height: 40em;
 	background-image: url("../images/blacktexture.jpg");
 	@extend %bgd-image;
 	.contact-div{
@@ -172,7 +172,7 @@ p.lead{
 
 	h1 {
 		text-align: center;
-		padding-bottom: 2em;
+		padding-bottom: 1em;
 	}
 	p {
 		color: $darkgray;
