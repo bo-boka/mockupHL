@@ -3,6 +3,8 @@ const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
+const clean = require('gulp-clean');
+var webserver = require('gulp-webserver');
 
 /*  
 
@@ -15,6 +17,15 @@ gulp.watch - Watch files and folders for changes
 
 */
 
+//webserver
+gulp.task('webserver', function() {
+  gulp.src('app')
+    .pipe(webserver({
+      livereload: true,
+      directoryListing: true,
+      open: true
+    }));
+});
 
 //logs message
 gulp.task('message', function(){
@@ -65,7 +76,9 @@ gulp.task('scripts', function(){
 
 //default runs function with naked 'gulp' command in bash
 //will run all functions
-gulp.task('default', ['message', 'copyIndex', 'copyHtml', 'imageMin', 'sass', 'scripts']);
+gulp.task('default', ['message', 'copyIndex', 'copyHtml', 
+	'imageMin', 'sass', 'scripts', 'watch', 'clean']);
+
 
 //watch files for changes and automatically runs tasks
 gulp.task('watch', function(){
@@ -75,7 +88,14 @@ gulp.task('watch', function(){
 	gulp.watch('*.html', ['copyIndex']);
 	gulp.watch('pages/*.html', ['copyHtml']);
 
-})
+});
+
+//clean 
+gulp.task('clean', function () {
+    return gulp.src('app/tmp/index.js')
+        .pipe(clean({force: true}))
+        .pipe(gulp.dest('dist'));
+});
 
 /*
 //angular
