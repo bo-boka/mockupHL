@@ -1,0 +1,162 @@
+/*COLORS*/
+/*$center: */
+.landing1, .landing2, .landing3, .contact {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 500px;
+  color: #ffffff;
+  padding-top: 100px; }
+
+body {
+  font-family: sans-serif;
+  color: #696d76;
+  font-size: .85em;
+  font-weight: 600; }
+
+.btn-primary {
+  background-color: #49cbcd;
+  border: #49cbcd; }
+
+.portfolio, .client, .center, .card.span {
+  text-align: center; }
+
+/*NAV*/
+.navbar {
+  padding: 0em 3em; }
+  .navbar li {
+    padding: 2em 1em; }
+    .navbar li:hover {
+      background-color: #f8f9fb;
+      border-bottom: 2px solid #49cbcd; }
+
+.nav-link:hover {
+  color: #49cbcd !important; }
+
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+  color: #49cbcd !important;
+  font-size: 3em;
+  font-weight: 400;
+  font-style: italic; }
+
+/*LANDING*/
+.landing1 {
+  background-image: url("../images/duskywaters.jpg") !important; }
+
+.landing2 {
+  background-image: url("../images/underwater.PNG") !important; }
+
+.landing3 {
+  background-image: url("../images/showcase/668.JPG") !important; }
+
+.center h1 {
+  font-size: 4.5em; }
+
+.center p {
+  padding: 1% 35%;
+  font-size: 1.7em;
+  font-weight: 400; }
+
+/*CARDS*/
+.cards {
+  padding: 7% 0%; }
+
+.card {
+  border: none; }
+  .card span {
+    font-size: 2em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: solid 0.08em #49cbcd;
+    color: #49cbcd;
+    line-height: 3em;
+    width: 3em;
+    height: 3em;
+    display: inline-block;
+    transition: 0.5s; }
+
+.card-text {
+  font-size: 1em;
+  font-weight: 400; }
+
+/*PORTFOLIO*/
+.portfolio {
+  background-color: #f1f1f1;
+  padding: 7% 0%; }
+
+div.gallery {
+  padding: 3% 0%; }
+  div.gallery .row {
+    width: 82%;
+    margin: 0 auto; }
+  div.gallery img {
+    margin: 1em;
+    width: 20em;
+    height: 20em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border: none; }
+    div.gallery img:hover {
+      border: 1px solid #ffffff; }
+
+/*CLIENTS*/
+.client {
+  background-color: #ffffff;
+  padding: 7% 15%; }
+
+p.lead {
+  padding: 1% 15%;
+  font-size: 1.2em;
+  font-weight: 400; }
+
+/*CONTACT*/
+.contact {
+  height: 45em;
+  background-image: url("../images/blacktexture.jpg"); }
+  .contact .contact-div {
+    padding: 0% 10%; }
+  .contact h1, .contact h4 {
+    color: #ffffff; }
+  .contact h1 {
+    text-align: center;
+    padding-bottom: 2em; }
+  .contact p {
+    color: #696d76; }
+  .contact .contact-info {
+    color: #a393c3; }
+  .contact form {
+    padding: 0% 7%; }
+
+/*MEDIA*/
+/*extra small - phone*/
+@media screen and (max-width: 575.98px) {
+  body {
+    background-color: green; } }
+
+/*small - landscape phone*/
+@media screen and (max-width: 767.98px) {
+  body {
+    background-color: blue; } }
+
+/*medium -  tablets*/
+@media screen and (max-width: 991.98px) {
+  body {
+    background-color: red; } }
+
+/*large - desktops*/
+@media screen and (max-width: 1199.98px) {
+  body {
+    background-color: yellow; } }
