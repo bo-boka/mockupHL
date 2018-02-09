@@ -124,7 +124,7 @@ p.lead {
 
 /*CONTACT*/
 .contact {
-  height: 45em;
+  height: 40em;
   background-image: url("../images/blacktexture.jpg"); }
   .contact .contact-div {
     padding: 0% 10%; }
@@ -132,7 +132,7 @@ p.lead {
     color: #ffffff; }
   .contact h1 {
     text-align: center;
-    padding-bottom: 2em; }
+    padding-bottom: 1em; }
   .contact p {
     color: #696d76; }
   .contact .contact-info {
