@@ -1,5 +1,10 @@
 /*COLORS*/
-/*$center: */
+/* BREAKPOINTS */
+/*
+@import '_variables.scss';
+@import '_functions.scss';
+@import 'mixins/_breakpoints.scss';
+*/
 .landing1, .landing2, .landing3, .contact {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -19,24 +24,44 @@
 body {
   font-family: sans-serif;
   color: #696d76;
-  font-size: .85em;
-  font-weight: 600; }
+  font-size: .85rem;
+  font-weight: 600;
+  /*
+	@include breakpoint($xs, $sm) {	
+		background-color: green;	 
+	}
+	@include breakpoint($sm, $md) {	
+	    background-color: yellow; 
+	}
+	@include breakpoint($md, $lg) {	
+	    background-color: blue;	
+	}
+	@include breakpoint($lg, $xl) {
+		background-color: red;
+	}
+	*/ }
 
 .btn-primary {
   background-color: #49cbcd;
   border: #49cbcd; }
+  .btn-primary:hover {
+    background-color: #f8f9fb;
+    color: #49cbcd !important; }
 
 .portfolio, .client, .center, .card.span {
   text-align: center; }
 
 /*NAV*/
 .navbar {
-  padding: 0em 3em; }
+  padding: 0rem 3rem; }
   .navbar li {
-    padding: 2em 1em; }
+    padding: 2rem 1rem; }
     .navbar li:hover {
       background-color: #f8f9fb;
       border-bottom: 2px solid #49cbcd; }
+    @media (min-width: 0) and (max-width: 576px) {
+      .navbar li {
+        padding: 0rem 1rem; } }
 
 .nav-link:hover {
   color: #49cbcd !important; }
@@ -44,9 +69,12 @@ body {
 .navbar-brand {
   font-family: 'Lobster', cursive;
   color: #49cbcd !important;
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 400;
   font-style: italic; }
+  @media (min-width: 0) and (max-width: 576px) {
+    .navbar-brand {
+      font-size: 2rem; } }
 
 /*LANDING*/
 .landing1 {
@@ -59,12 +87,19 @@ body {
   background-image: url("../images/kuangsi.PNG") !important; }
 
 .center h1 {
-  font-size: 4.5em; }
+  font-size: 4.5rem; }
+  @media (min-width: 0) and (max-width: 576px) {
+    .center h1 {
+      font-size: 2.5rem; } }
 
 .center p {
   padding: 1% 35%;
-  font-size: 1.7em;
+  font-size: 1.7rem;
   font-weight: 400; }
+  @media (min-width: 0) and (max-width: 576px) {
+    .center p {
+      padding: 1% 5%;
+      font-size: 1rem; } }
 
 /*CARDS*/
 .cards {
@@ -98,17 +133,25 @@ body {
 div.gallery {
   padding: 3% 0%; }
   div.gallery .row {
-    width: 82%;
+    width: 88%;
     margin: 0 auto; }
   div.gallery img {
     margin: 1em;
-    width: 20em;
-    height: 20em;
+    width: 18rem;
+    height: 18rem;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     border: none; }
+    @media (min-width: 0) and (max-width: 576px) {
+      div.gallery img {
+        width: 10rem;
+        height: 10rem; } }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      div.gallery img {
+        width: 14rem;
+        height: 14rem; } }
     div.gallery img:hover {
       border: 1px solid #ffffff; }
 
@@ -116,6 +159,9 @@ div.gallery {
 .client {
   background-color: #ffffff;
   padding: 7% 15%; }
+  @media (min-width: 0) and (max-width: 576px) {
+    .client {
+      padding: 1% 1%; } }
 
 p.lead {
   padding: 1% 15%;
@@ -124,39 +170,43 @@ p.lead {
 
 /*CONTACT*/
 .contact {
-  height: 40em;
+  height: 35rem;
   background-image: url("../images/blacktexture.jpg"); }
+  @media (min-width: 0) and (max-width: 576px) {
+    .contact {
+      padding-top: 15px;
+      height: 45rem; } }
   .contact .contact-div {
     padding: 0% 10%; }
   .contact h1, .contact h4 {
     color: #ffffff; }
   .contact h1 {
     text-align: center;
-    padding-bottom: 1em; }
+    padding-bottom: 1rem; }
+    @media (min-width: 0) and (max-width: 576px) {
+      .contact h1 {
+        padding: 1% 0%; } }
   .contact p {
     color: #696d76; }
   .contact .contact-info {
     color: #a393c3; }
+    @media (min-width: 0) and (max-width: 576px) {
+      .contact .contact-info {
+        padding: 5% 0%; } }
   .contact form {
     padding: 0% 7%; }
 
 /*MEDIA*/
-/*extra small - phone*/
-@media screen and (max-width: 575.98px) {
-  body {
-    background-color: green; } }
-
-/*small - landscape phone*/
-@media screen and (max-width: 767.98px) {
-  body {
-    background-color: blue; } }
-
-/*medium -  tablets*/
-@media screen and (max-width: 991.98px) {
-  body {
-    background-color: red; } }
-
-/*large - desktops*/
-@media screen and (max-width: 1199.98px) {
-  body {
-    background-color: yellow; } }
+/*
+body {
+	@include media-breakpoint-up(sm){
+		background-color: green;
+	}
+	@include media-breakpoint-up(md){
+		background-color: red;
+	}
+	@include media-breakpoint-up(lg){
+		background-color: blue;
+	}
+}
+*/

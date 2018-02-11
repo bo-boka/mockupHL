@@ -1,5 +1,10 @@
 @import 'vars';
 @import 'mixins';
+/*
+@import '_variables.scss';
+@import '_functions.scss';
+@import 'mixins/_breakpoints.scss';
+*/
 
 %bgd-image {
   @include img-bgd-size(cover);
@@ -15,13 +20,32 @@
 body {
 	font-family: sans-serif;
 	color: $darkgray;
-	font-size: .85em;
+	font-size: .85rem;
 	font-weight: 600;
+	/*
+	@include breakpoint($xs, $sm) {	
+		background-color: green;	 
+	}
+	@include breakpoint($sm, $md) {	
+	    background-color: yellow; 
+	}
+	@include breakpoint($md, $lg) {	
+	    background-color: blue;	
+	}
+	@include breakpoint($lg, $xl) {
+		background-color: red;
+	}
+	*/
+	
 }
 
 .btn-primary {
 	background-color: $seafoam;
 	border: $seafoam;
+	&:hover{
+		background-color: $mutegray;
+		color: $seafoam !important;	
+	}
 }
 
 .portfolio, .client, .center, .card.span {
@@ -32,14 +56,17 @@ body {
 /*NAV*/
 
 .navbar {
-	padding: 0em 3em;
+	padding: 0rem 3rem;
 
 	li { 
-		padding: 2em 1em;
+		padding: 2rem 1rem;
 		&:hover {
 			background-color: $mutegray;
 			border-bottom: 2px solid $seafoam;			
 		} 
+		@include breakpoint($xs, $sm) {	
+			padding: 0rem 1rem;	 
+		}
 	}
 }
 
@@ -52,7 +79,10 @@ body {
 .navbar-brand {
 	font-family: 'Lobster', cursive;
 	color: $seafoam !important;	
-	font-size: 3em;
+	font-size: 3rem;
+	@include breakpoint($xs, $sm) {	
+		font-size: 2rem;	 
+	}
 	font-weight: 400;
 	font-style: italic;
 }
@@ -77,12 +107,19 @@ body {
 
 .center{	       
     h1 {
-    	font-size: 4.5em;
+    	font-size: 4.5rem;
+    	@include breakpoint($xs, $sm) {	
+			font-size: 2.5rem;	 
+		}
     }
     p {
     	padding: 1% 35%;
-    	font-size: 1.7em;
+    	font-size: 1.7rem;
     	font-weight: 400;
+    	@include breakpoint($xs, $sm) {	
+			padding: 1% 5%;;
+			font-size: 1rem;	 
+		}
     }
 }
 
@@ -121,18 +158,26 @@ body {
 }
 
 div.gallery {  
-	padding: 3% 0%; 
+	padding: 3% 0%;	
 	.row {
-		width: 82%;
+		width: 88%;
 		margin: 0 auto;
 	}
 
     img {
     	margin: 1em;
-    	width: 20em; 
-    	height: 20em;
+    	width: 18rem; 
+    	height: 18rem;
     	@include border-radius(3px);
     	border: none;
+    	@include breakpoint($xs, $sm) {	
+			width: 10rem; 
+    		height: 10rem;	 
+		}
+		@include breakpoint($md, $xl) {	
+			width: 14rem; 
+    		height: 14rem;	 
+		}
 
     	&:hover {
 	    	border: 1px solid $white;
@@ -146,8 +191,9 @@ div.gallery {
 .client {
 	background-color: $white;
 	padding: 7% 15%;
-
-	
+	@include breakpoint($xs, $sm) {	
+		padding: 1% 1%;	 
+	}	
 }
 
 p.lead{			
@@ -160,11 +206,16 @@ p.lead{
 /*CONTACT*/
 
 .contact {
-	height: 40em;
+	height: 35rem;
+	@include breakpoint($xs, $sm) {	
+		padding-top: 15px;
+		height: 45rem;
+	  }
 	background-image: url("../images/blacktexture.jpg");
 	@extend %bgd-image;
 	.contact-div{
-		padding: 0% 10%
+		padding: 0% 10%;
+
 	}
 	h1, h4 {
 		color: $white;
@@ -172,47 +223,38 @@ p.lead{
 
 	h1 {
 		text-align: center;
-		padding-bottom: 1em;
+		padding-bottom: 1rem;
+		@include breakpoint($xs, $sm) {	
+			padding: 1% 0%; 
+		}
 	}
 	p {
 		color: $darkgray;
 	}
 	.contact-info {
 		color: $lavendar;
+		@include breakpoint($xs, $sm) {	
+			padding: 5% 0%; 
+		}
 	}
 	form {
-		padding: 0% 7%
+		padding: 0% 7%;		
 	}
 }
 
 
 /*MEDIA*/
 
-/*extra small - phone*/
-@media screen and (max-width: 575.98px) { 
-	 body{
-	    background-color: green;
-	  }
+/*
+body {
+	@include media-breakpoint-up(sm){
+		background-color: green;
+	}
+	@include media-breakpoint-up(md){
+		background-color: red;
+	}
+	@include media-breakpoint-up(lg){
+		background-color: blue;
+	}
 }
-
-/*small - landscape phone*/
-@media screen and (max-width: 767.98px) {
-	 body{
-	    background-color: blue;
-	  }
-}
-
-/*medium -  tablets*/
-@media screen and (max-width: 991.98px) {
-	 body{
-	    background-color: red;
-	  }
-}
-
-/*large - desktops*/
-@media screen and (max-width: 1199.98px) {
-	 body{
-	    background-color: yellow;
-	  }
-}
-
+*/
