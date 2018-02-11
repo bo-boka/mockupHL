@@ -2,7 +2,8 @@
 <html ng-app="myApp" lang="en">
 <head>
   <title></title>
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!--FONT AWESOME-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -88,22 +89,19 @@
 		</div>		   
 
 		<div class="col-sm-6">
-			<form>
-			  <div class="form-row">
-			    <div class="form-group col-md-6">
-			      <label for="inputEmail4">Email</label>
-			      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+			<form action="https://formspree.io/boka.sarah@gmail.com" method="POST">
+			  <div class="form-row">			    
+			    <div class="form-group col-md-6">			      
+			      <input type="text" class="form-control" id="inputName"  name="name" placeholder="Name">
 			    </div>
-			    <div class="form-group col-md-6">
-			      <label for="inputPassword4">Password</label>
-			      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+			    <div class="form-group col-md-6">			      
+			      <input type="email" class="form-control" id="inputEmail"  name="_replyto" placeholder="Email">
 			    </div>
 			  </div>
-			  <div class="form-group">
-			    <label for="exampleFormControlTextarea1">Example textarea</label>
-			    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+			  <div class="form-group">			    
+			    <textarea class="form-control" id="inputMessage" rows="5" placeholder="Message"></textarea>
 			  </div>
-			  <button type="submit" class="btn btn-primary btn-lg float-right">Send</button>
+			  <input type="submit" class="btn btn-primary btn-lg float-right" value="Send"></input>
 			</form>
 		</div>
 
