@@ -195,19 +195,4 @@ p.lead {
   .contact form {
     padding: 0% 7%; }
 
-/*MEDIA*/
-/*
-body {
-	@include media-breakpoint-up(sm){
-		background-color: green;
-	}
-	@include media-breakpoint-up(md){
-		background-color: red;
-	}
-	@include media-breakpoint-up(lg){
-		background-color: blue;
-	}
-}
-*/
-
 /*# sourceMappingURL=main.css.map */

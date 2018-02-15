@@ -19,17 +19,16 @@ gulp.watch - Watch files and folders for changes
 
 */
 
-//webserver
-gulp.task('webserver', function() {
-  gulp.src('app')
-    .pipe(webserver({
-      livereload: true,
-      directoryListing: true,
-      open: true
-    }));
+//production server
+gulp.task('serveprod', function() {
+  connect.server({
+    root: dist,
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
 });
 
-//updated webserver 
+//local server 
 gulp.task('connect', function() {
   connect.server();
 });
@@ -48,7 +47,7 @@ gulp.task('copyIndex', function(){
 //copy html pages to dist
 gulp.task('copyHtml', function(){
 	gulp.src('pages/*.html')
-	.pipe(gulp.dest('dist'));
+	.pipe(gulp.dest('dist/pages'));
 });
 
 //optimaize images
@@ -93,7 +92,7 @@ gulp.task('scripts', function(){
 //default runs function with naked 'gulp' command in bash
 //will run all functions
 gulp.task('default', ['message', 'copyIndex', 'copyHtml', 
-	'imageMin', 'sass', 'scripts']);
+	'imageMin', 'sass', 'scripts', 'serveprod']);
 
 
 //watch files for changes and automatically runs tasks
